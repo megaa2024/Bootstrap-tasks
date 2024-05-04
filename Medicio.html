@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MEDICIO</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+    	.carousel-inner img{
+    		width: 100%;
+    		height: 500px;
+    	}
+    	.carousel-indicators li{
+    		width: 12px;
+    		height: 12px;
+    		border-radius: 100%;
+    	}
+    	#shadow>#card1>.card-header:hover{
+    		background-color: #00CED1;
+    	}
+    	#shadow>#card2>.card-header:hover{
+    		background-color: #00CED1;
+    	}
+    	#shadow>#card3>.card-header:hover{
+    		background-color: #00CED1;
+    	}
+    	#shadow>#card4>.card-header:hover{
+    		background-color: #00CED1;
+    	}
+    	#shadow>.card:hover{
+    		box-shadow: 0px 0px 15px #E0E0E0;
+    	}
+    	.navbar{
+    		position: sticky;
+    		top: 0;
+    		background-color: white;
+    		z-index: 100;
+    	}
+    	#bg1:hover{
+    		color: darkcyan;
+    		background-color: darkred;
+    		box-shadow: 0px 0px 15px #E0E0E0;
+    	}
+    	#bg2:hover{
+    		color: darkcyan;
+    		background-color: darkred;
+    		box-shadow: 0px 0px 15px #E0E0E0;
+    	}
+    	#bg3:hover{
+    		color: darkcyan;
+    		background-color: darkred;
+    	}
+    	#bg4:hover{
+    		color: darkcyan;
+    		background-color: darkred;
+    		box-shadow: 0px 0px 15px #E0E0E0;
+    	}
+    	#bg1>#color1:hover{
+    		color: #00CED1;
+    	}
+    	#bg2>#color2:hover{
+    		color: #00CED1;
+    	}
+    	#bg3>#color3:hover{
+    		color: #00CED1;
+    	}
+    	#bg4>#color4:hover{
+    		color: #00CED1;
+    	}
+    	.flex{
+    		display: flex;
+    	}
+
+    </style>
+</head>
+<body>
+<div class="bg-info" style="color: white;">
+	<p style="margin-left: 100px;"><i class="fa-regular fa-clock"></i>   Monday - Saturday,8AM to 10PM<span style="margin-left: 700px;"><i class="fa-solid fa-mobile-screen-button"></i>   Call us now 9360163609</span></p>
+</div>
+<div class="navbar navbar-expand-sm navbar-dark " style="color: white;">
+	<img src="Asserts/logo.jpg" style="height: 40px; width: 40px; border-radius: 100%;">&nbsp; &nbsp;
+	<p class="navbar-brand text-dark">MEDICIO</p>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#atag"><span class="navbar-toggler-icon"></span></button>
+	<div class="collapse navbar-collapse" id="atag">
+		<ul class="navbar-nav" style="margin-left: 20%;">
+			<li class="nav-item">
+				<a class="nav-link active text-dark" href="#caro">HOME</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link  text-dark" href="#abt">ABOUT</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link  text-dark" href="#ser">SERVICES</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link  text-dark" href="#dept">DEPARTMETS</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link  text-dark" href="#doc">DOCTORS</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle text-dark" href="#" id="drop" role="button" data-toggle="dropdown">DROP DOWN</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">action</a>
+					<a class="dropdown-item" href="#">action 1</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">action 2</a>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-dark" href="#con">CONTACT</a>
+			</li>
+			<li class="nav-item">
+				<button class="btn btn-info p-1 ml-5">Make an Appointment</button>
+			</li>
+		</ul>
+	</div>
+</div>
+<div id="caro" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#caro" data-slide-to="0" class="active bg-info"></li>
+		<li data-target="#caro" data-slide-to="1"></li>
+		<li data-target="#caro" data-slide-to="2"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item  active">
+			<img src="Asserts/h1.jpg" width="900" height="500">
+			<div class="carousel-caption">
+				<div class="jumbotron bg-light">
+					<h1 class="text-dark">Welcome to Medicio</h1>
+					<p class="text-secondary unstyled">Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="btn btn-info p-2 m-auto"><b>Read more</b></button>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="Asserts/h4.jpg" width="900" height="500">
+			<div class="carousel-caption">
+				<div class="jumbotron bg-light">
+					<h1 class="text-dark">Welcome to Medicio</h1>
+					<p class="text-secondary unstyled">Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="btn btn-info p-2 m-auto"><b>Read more</b></button>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img src="Asserts/h3.webp" width="900" height="500">
+			<div class="carousel-caption">
+				<div class="jumbotron bg-light">
+					<h1 class="text-dark">Welcome to Medicio</h1>
+					<p class="text-secondary unstyled">Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="btn btn-info p-2 m-auto"><b>Read more</b></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#caro" data-slide="prev">
+        <span class="carousel-control-prev-icon bg-info p-3" style="border-radius: 100%;"></span>
+    </a>
+    <div id="pluse" class="row" style="margin: 0px 100px;">
+	<div class="col-3">
+			<div id="bg1" class="card pl-4" style="background-color: white;">
+				<br>
+				<h1><i class="fa-solid fa-heart-pulse text-info h-2 w-2"></i></h1>
+				<h5>Lorem Ipsum</h5>
+			
+				<p id="color1" class="text-secondary">dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+			</div>
+	</div>
+	<div class="col-3">
+			<div id="bg2" class="card pl-4" style="background-color: white;">
+				<br>
+				<h1><i class="fa-solid fa-capsules text-info"></i></h1>
+				<h5>Sed utperspiciatis</h5>
+			
+				<p id="color2" class="text-secondary">dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+		    </div>
+	</div>
+	<div class="col-3">
+			<div id="bg3" class="card pl-4" style="background-color: white;">
+				<br>
+				<h1><i class="fa-solid fa-thermometer text-info"></i></h1>
+				<h5>Magni Dolores</h5>
+			
+				<p id="color3" class="text-secondary">dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+			</div>
+	</div>
+	<div class="col-3">
+			<div id="bg4" class="card pl-4" style="background-color: white;">
+				<br>
+				<h1><i class="fa-solid fa-dna text-info"></i></h1>
+				<h5>Nemo Enim</h5>
+			
+				<p id="color4" class="text-secondary">dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+			</div>
+	</div>
+</div>
+    <a class="carousel-control-next" href="#caro" data-slide="next">
+        <span class="carousel-control-next-icon bg-info p-3" style="border-radius: 100%;"></span>
+    </a>
+</div>
+<br>
+<br>
+
+<br>
+<br>
+<div class="bg-info" style="text-align: center; color: white;">
+	<br>
+	<br>
+	<br>
+	<h4>In an Emergency? Need help now?</h4>
+	<p style="padding: 0px 100px;">Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<button class="btn btn-outline-secondary pl-4 pr-4 ml-5 " style="border-radius: 50px; color: white; border-color: white;"><a href="#app" style="color: white; text-decoration: none;">Make an Appointment</a></button>
+	<br>
+	<br>
+</div>
+</div>
+<br>
+<br>
+<div id="abt">
+	<br>
+	<h1 style="text-align: center;">ABOUT US</h1>
+	<p style="text-align: center; margin: 10px 100px 10px 100px;" class="text-secondary unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div style="display: flex;">
+<div style="margin-left: 120px;">
+	<img src="Asserts/hos1.jpg" height="400px" width="600px">
+</div>
+<div style="margin-left: 20px; margin-right: 100px;" class="text-secondary">
+	<h3 class="text-dark unstyled">Voluptatern dinissimos provident quasi corporis voluplates sit assumenda.</h3>
+	<p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua.</i></p>
+	<br>
+	<p class="unstyled"><i class="fa-regular fa-circle-check text-info"></i>  Ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.</p>
+	<p class="unstyled"><i class="fa-regular fa-circle-check text-info"></i>  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+	<p class="unstyled"><i class="fa-regular fa-circle-check text-info"></i>  Ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur.</p>
+	<br>
+	<p class="unstyled">Ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+</div>
+<br>
+<br>
+<div id="rose" class="row" style="margin: 0px 100px;">
+		<div class="col-3">
+			<div class="card p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0;">
+				<h2><i class="fa-solid fa-user-doctor text-info"></i>   85</h2>
+				<p><b>Doctors</b> consequuntur quae qui ddeca rode</p>
+				<a href="#" class=" find text-secondary unstyled">Find out more  <i class="fa-solid fa-angles-right"></i></a>
+				<br>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="card p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0;">
+				<h2><i class="fa-regular fa-hospital text-info"></i>   26</h2>
+				<p><b>Departments</b> adipisci atque cum uia aut numquam delectus</p>
+				<a href="#" class="find text-secondary unstyled">Find out more  <i class="fa-solid fa-angles-right"></i></a>
+				<br>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="card p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0;">
+				<h2><i class="fa-solid fa-flask text-info"></i>   14</h2>
+				<p><b>Research Lab</b> aut commodi quaerat. Aliquam ratione</p>
+				<a href="#" class="find text-secondary unstyled">Find out more  <i class="fa-solid fa-angles-right"></i></a>
+				<br>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="card p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0;">
+				<h2><i class="fa-solid fa-award text-info"></i>   120</h2>
+				<p><b>Awards</b> return asperiores dolor molestiae doloribu</p>
+				<a href="#" class="find text-secondary">Find out more  <i class="fa-solid fa-angles-right"></i></a>
+				<br>
+			</div>
+		</div>
+	</div>
+<br>
+<div class="row" style="margin: 20px 100px 10px 100px">
+	<div class="col-6">
+		<div class="flex">
+		    <div><h1><i class="fa-solid fa-sheet-plastic text-info mt-4"></i></h1></div>&nbsp;&nbsp;&nbsp;&nbsp;
+		    <div>
+		    	<h5>Est labore ad</h5>
+		    	<p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+		</div>
+		<br>
+		<div class="flex">
+		    <div><h1><i class="fa-solid fa-cube text-info mt-4"></i></h1></div>&nbsp;&nbsp;&nbsp;&nbsp;
+		    <div>
+		    	<h5>Harum esse qui</h5>
+		    	<p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+		</div>
+		<br>
+		<div class="flex">
+            <div><h1><i class="fa-regular fa-images text-info mt-4"></i></h1></div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+            	<h5>Aut occaecati</h5>
+            	<p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        </div>
+		<br>
+		<div class="flex">
+            <div><h1><i class="fa-solid fa-shield text-info mt-4"></i></h1></div>&nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+            	<h5>Beatae veritatis</h5>
+            	<p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        </div>
+	</div>
+	<div class="col-6">
+		<img src="Asserts/lab2.jpeg" height="440px" width="500px">
+	</div>
+</div>
+<div id="ser">
+	<br>
+	<h1 style="text-align: center;">SERVICES</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<div class="row" style="margin: 10px 100px 10px 100px;">
+		<div class="col-4">
+			<h1><i class="fa-solid fa-heart-pulse text-info p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0; border-radius: 100%; margin-left: 130px;"></i></h1>
+			<br>
+			<h5 class="text-dark" style="text-align: center;"><b>Lorem Ipsum</b></h5>
+			<p class="text-secondary" unstyled style="text-align: center;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occqecqti cipiditate non provident</p>
+		</div>
+		<div class="col-4">
+			<h1><i class="fa-solid fa-capsules text-info p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0; border-radius: 100%; margin-left: 130px;"></i></h1>
+			<br>
+			<h5 class="text-dark" style="text-align: center;"><b>Dolor Sitema</b></h5>
+			<p class="text-secondary unstyled" style="text-align: center;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occqecqti cipiditate non provident</p>
+		</div>
+		<div class="col-4">
+			<h1><i class="fa-solid fa-hospital-user text-info p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0; border-radius: 100%; margin-left: 130px;"></i></h1>
+			<br>
+			<h5 class="text-dark" style="text-align: center;"><b>Sed ut perspiciatis</b></h5>
+			<p class="text-secondary unstyled" style="text-align: center;"s>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occqecqti cipiditate non provident</p>
+		</div>
+	</div>
+	<div class="row" style="margin: 10px 100px 10px 100px;">
+		<div class="col-4">
+			<h1><i class="fa-solid fa-dna text-info p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0; border-radius: 100%; margin-left: 130px;"></i></h1>
+			<br>
+			<h5 class="text-dark" style="text-align: center;"><b>Magni Dolores</b></h5>
+			<p class="text-secondary unstyled" style="text-align: center;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occqecqti cipiditate non provident</p>
+		</div>
+		<div class="col-4">
+			<h1><i class="fa-solid fa-wheelchair text-info p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0; border-radius: 100%; margin-left: 130px;"></i></h1>
+			<br>
+			<h5 class="text-dark" style="text-align: center;"><b>Nemo Enim</b></h5>
+			<p class="text-secondary unstyled" style="text-align: center;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occqecqti cipiditate non provident</p>
+		</div>
+		<div class="col-4">
+			<h1><i class="fa-regular fa-images text-info p-3" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0; border-radius: 100%; margin-left: 130px;"></i></h1>
+			<br>
+			<h5 class="text-dark" style="text-align: center;"><b>Eiusmod Tempor</b></h5>
+			<p class="text-secondary unstyled" style="text-align: center;">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occqecqti cipiditate non provident</p>
+		</div>
+	</div>
+</div>
+<div id="app" style="background-color: #F0F8FF;"><br>
+	<h1 style="text-align: center;">MAKE AN APPOINTMENT</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<div class="row" style="margin: 0px 30px;">
+	    <div class="col-4">
+		   <form>
+		        <input type="text" class="form-control" name="" placeholder="Your Name">
+		   </form>
+	    </div>
+	    <div class="col-4">
+		    <form>
+		        <input type="text" class="form-control" name="" placeholder="Your Email">
+		    </form>
+	    </div>
+	    <div class="col-4">
+		    <form>
+		       <input type="text" class="form-control" name="" placeholder="Your Phone">
+		    </form>
+	    </div>
+	</div>
+	<br>
+	<div class="row" style="margin: 0px 30px;">
+		<div class="col-4">
+			<form>
+				<input type="text" class="form-control" name="" placeholder="Appointment Date">
+			</form>
+		</div>
+		<div class="dropdown col-4">
+			<div type="dropdown" class="dropdown-toggle form-control" role="button" data-toggle="dropdown">Select Department &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		    <div class="dropdown-menu">
+			    <p class="dropdown-item">Nephrology</p>
+			    <p class="dropdown-item">Anesthesiologist</p>
+			    <p class="dropdown-item">Cardiology</p>
+			    <p class="dropdown-item">Neurosugeon</p>
+
+		    </div>
+		</div>
+		<div class="dropdown col-4">
+			<div type="dropdown" class="dropdown-toggle form-control" role="button" data-toggle="dropdown">Select Doctor &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div>
+		    <div class="dropdown-menu">
+			    <p class="dropdown-item">Dr. Walter White</p>
+			    <p class="dropdown-item">Dr. Sara Johnson</p>
+			    <p class="dropdown-item">Dr. William Anderson</p>
+			    <p class="dropdown-item">Dr. Amanda Jepson</p>
+
+		    </div>
+		</div>
+	</div>
+	<br>
+	<div style="margin: 0px 45px;">
+	<form> 
+		<textarea class="form-control" placeholder="Message (Optional)" rows="4px"></textarea>
+	</form>
+	<br>
+	<button class="btn btn-info pl-4 pr-4" style="border-radius: 50px; margin-left: 500px;">Make an Appointment</button>
+	<br>
+	<br>
+	<br>
+	</div>
+</div>
+<br>
+<div id="dept">
+	<br>
+	<h1 style="text-align: center;">DEPATMENTS</h1>
+	<p style="text-align: center;" class="m-5 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<div class="row">
+    <div class="col-4" style="background-color: #F0F8FF; margin-left: 70px;">
+    	<br>
+	   <h5 class="text-info">Cardiology</h5>
+	   <p>Quis excerturi porro totam sint earum quo nulla perspiciatis eius.</p>
+    </div>
+    <div class="col-6" style="margin-left: 10px; margin-right: 50px;">
+    	<h3 class="text-info">Cardiology</h3>
+    	<h6 class="text-secondary "><i>Qui laudantium consequatur laborem sit qui ad sapiente dila parde sonata rqer a videnamareta paulona marka</i></h6>
+    </div>
+</div>
+<br>
+<div class="row" style="margin: 0px 50px;">
+	<div class="col-4 pl-4">
+		<h5 class="text-dark">Neurology</h5>
+		<p style="color: gray;">Voluptas vel esse repudindae quo excepturi.</p>
+		<br>
+		<h5 class="text-dark">Hepatology</h5>
+		<p style="color: gray;">Velit veniam ipsa sit nihil blanditiis mollitia natus.</p>
+		<br>
+		<h5 class="text-dark">Pediatrics</h5>
+		<p style="color: gray;">Ratione hic sapiente nostrum doloremque illum hulla praesentium id.</p>
+	</div>
+	<div class="col-4">
+		<img src="Asserts/sethe.jpg" height="300px" width="390px">
+	</div>
+	<div class="col-4">
+		<p style="color: gray;" class="unstyled">Vet dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div>
+	<br>
+	<h1 style="text-align: center;">TESTIMONIALS</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<div class="row" style="margin-left: 200px;">
+		<div class="col-3 p-3" style="margin-left: 20px;">
+			<div style="background-color: #F0F8FF; padding: 20px; border-radius: 6px;">
+			<p><i><i class="fa-solid fa-quote-left text-info"></i>Ut enim ad minim veniam,
+	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<i class="fa-solid fa-quote-right text-info"></i></i></p>
+	        </div>
+	        <div style="margin-left: 20px;">
+	        <img src="Asserts/p1.jpg" height="80px" width="80px" style="border-radius: 50px; border: 8px solid whitesmoke;">
+	        <h5><b>Paul Goodman</b></h5>
+	        <p class="text-secondary">CEO & Founder</p>
+	        </div>
+	    </div>
+		<div class="col-3 p-3" style="margin-left: 20px;">
+			<div style="background-color: #F0F8FF; padding: 20px; border-radius: 6px;">
+			<p><i><i class="fa-solid fa-quote-left text-info"></i>Ut enim ad minim veniam,
+	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<i class="fa-solid fa-quote-right text-info"></i></i></p>
+	        </div>
+	        <div style="margin-left: 20px;">
+		    <img src="Asserts/p2.jpg" height="80px" width="80px" style="border-radius: 50px; border: 8px solid whitesmoke;">
+		    <h5><b>Sara Willson</b></h5>
+		    <p class="text-secondary">Designer</p>
+	        </div>
+		</div>
+		<div class="col-3 p-3" style="margin-left: 20px;">
+			<div style="background-color: #F0F8FF; padding: 20px; border-radius: 6px;">
+			<p><i><i class="fa-solid fa-quote-left text-info"></i>Ut enim ad minim veniam,
+	        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<i class="fa-solid fa-quote-right text-info"></i></i></p>
+	        </div>
+	        <div style="margin-left: 20px;">
+		    <img src="Asserts/p3.jpg" height="80px" width="80px" style="border-radius: 50px; border: 8px solid whitesmoke;">
+		    <h5><b>Jena Karlis</b></h5>
+		    <p class="text-secondary">Store Owner</p>
+		    </div>
+		</div>
+	</div>
+	<br>
+	<div style="text-align: center;">
+	<i class="fa-solid fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>	
+	<i class="fa-regular fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>
+	</div>
+	<br>
+</div>
+<br>
+<div id="doc" style="background-color: #F0F8FF;"><br>
+	<h1 style="text-align: center;">DOCTORS</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<div class="row" style="margin: 0px 50px;">
+		<div class="col-3">
+			<div class="card">
+				<img src="Asserts/d2.jpg">
+			</div>
+			<div class="card-body" style="background-color: white;">
+				<h5 style="text-align: center;" class="text-dark">Walter White</h5>
+				<p style="text-align: center; color: gray;">Chief Medical Officer</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="card">
+				<img src="Asserts/d7.jpg">
+			</div>
+			<div class="card-body" style="background-color: white;">
+				<h5 style="text-align: center;" class="text-dark">Sara Jhonson</h5>
+				<p style="text-align: center; color: gray;">Anesthesiologist</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="card">
+				<img src="Asserts/d9.jpg">
+			</div>
+			<div class="card-body" style="background-color: white;">
+				<h5 style="text-align: center;" class="text-dark">William Anderson</h5>
+				<p style="text-align: center; color: gray;">Cardiology</p>
+			</div>
+		</div>
+		<div class="col-3">
+			<div class="card">
+				<img src="Asserts/d8.jpg">
+			</div>
+			<div class="card-body" style="background-color: white;">
+				<h5 style="text-align: center;" class="text-dark">Amanda Jepson</h5>
+				<p style="text-align: center; color: gray;">Neurosurgeon</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+</div>
+<br>
+<br>
+<div><br>
+	<h1 style="text-align: center;">GALLERY</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<div style="margin: 10px 100px 0px 100px;">
+		<ul class="pagination">
+			<li class="page-item"><img src="Asserts/g1.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g2.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g3.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g4.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g5.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g6.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g7.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g8.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+		</ul>
+    </div>
+    <div style="text-align: center;">
+	<i class="fa-solid fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>	
+	<i class="fa-regular fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>
+	<i class="fa-regular fa-circle text-info"></i>
+	</div>
+</div>
+<br>
+<div>
+	<br>
+	<h1 style="text-align: center;">PRICING</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<div id="shadow" class="row" style="margin-left: 230px;">
+		<div id="card1"class="card ml-3" style="background-color: white;">
+			<div class="card-header text-center">
+			<h6 class="text-secondary">Free</h6></div><br>
+			<div style="text-align: center;" class="card-body">
+			<div style="display: flex;">
+			<h5 class="text-info"><b>Rs</b></h5><h1 class="text-info">0&nbsp;</h1><p style="color: lightgray;">/ month</p></div>
+			<p>Aida dere</p>
+			<p>Nec feugiat nisi</p>
+			<p>Nulla at volutpat dola</p>
+			<p class="text-secondary" style="text-decoration: line-through; color: grey;">Pharetra massa</p>
+			<p class="text-secondary" style="text-decoration: line-through; color: grey;">Massa ultricies mi</p>
+		    </div>
+		    <div class="card-footer text-center">
+			<button class="btn btn-info pl-3 pr-3">Buy Now</button></div>
+		</div>
+		<div id="card2"class="card ml-3" style="background-color: white;">
+			<div class="card-header text-center">
+			<h6 class="text-secondary">Business</h6></div><br>
+			<div style="text-align: center;" class="card-body">
+				<div style="display: flex;">
+			<h5 class="text-info"><b>Rs</b></h5><h1 class="text-info">19&nbsp;</h1><p style="color: lightgray;">/ month</p></div>
+			<p>Aida dere</p>
+			<p>Nec feugiat nisi</p>
+			<p>Nulla at volutpat dola</p>
+			<p>Pharetra massa</p>
+			<p class="text-secondary" style="text-decoration: line-through; color: grey;" >Massa ultricies mi</p>
+		    </div>
+		    <div class="card-footer text-center">
+			<button class="btn btn-info pl-3 pr-3">Buy Now</button></div>
+		</div>
+		<div id="card3"class="card ml-3" style="background-color: white;">
+			<div class="card-header text-center">
+			<h6 class="text-secondary">Developer</h6></div><br>
+			<div style="text-align: center;" class="card-body">
+				<div style="display: flex;">
+			<h5 class="text-info"><b>Rs</b></h5><h1 class="text-info">29&nbsp;</h1><p style="color: lightgray;">/ month</p></div>
+			<p>Aida dere</p>
+			<p>Nec feugiat nisi</p>
+			<p>Nulla at volutpat dola</p>
+			<p>Pharetra massa</p>
+			<p>Massa ultricies mi</p>
+			</div>
+			<div class="card-footer text-center">
+			<button class="btn btn-info pl-3 pr-3">Buy Now</button></div>
+		</div>
+		<div id="card4"class="card ml-3" style="background-color: white;">
+			<div class="card-header text-center">
+			<h6 class="text-secondary">Ultimate</h6></div><br>
+			<div style="text-align: center;" class="card-body">
+				<div style="display: flex;">
+			<h5 class="text-info"><b>Rs</b></h5><h1 class="text-info">49&nbsp;</h1><p style="color: lightgray;">/ month</p></div>
+			<p>Aida dere</p>
+			<p>Nec feugiat nisi</p>
+			<p>Nulla at volutpat dola</p>
+			<p>Pharetra massa</p>
+			<p>Massa ultricies mi</p>
+		    </div>
+		    <div class="card-footer text-center">
+			<button class="btn btn-info pl-3 pr-3">Buy Now</button></div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div style="background-color: #F0F8FF"><br>
+	<h1 style="text-align: center;">FREQUENTLY ASKED QUESTIONS</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<ul class="list-group list-group-flush ml-4 mr-4">
+		<li class="list-group-item"><i class="fa-solid fa-chevron-down"></i>&nbsp; Non connsectetur a erat nam at lectus una duis?</li>
+		<li class="list-group-item"><i class="fa-solid fa-chevron-down"></i>&nbsp; Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</li>
+		<li class="list-group-item"><i class="fa-solid fa-chevron-down"></i>&nbsp; Dolor sit cosectetur adipiscing elit pellentesque abitant morbi?</li>
+		<li class="list-group-item"><i class="fa-solid fa-chevron-down"></i>&nbsp; Ac odio tempor orci dapibus.Aliquam eleifiend mi in nulla?</li>
+		<li class="list-group-item"><i class="fa-solid fa-chevron-down"></i>&nbsp; Tempus quam pellientesque nec nam alliquam sem et tortor consequat?</li>
+		<li class="list-group-item"><i class="fa-solid fa-chevron-down"></i>&nbsp; Tortor vitae purus faucibus ornare.Varius vel pharetra vel turpis nunc eget lorem dolor?</li>
+
+	</ul>
+</div>
+<br>
+<br>
+<div id="con">
+	<br>
+	<h1 style="text-align: center;">CONTACT</h1>
+	<p style="text-align: center;" class="m-4 unstyled"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-6">
+			<div class="row">
+				<div class="col-9 p-1" style="background-color: white; box-shadow: 0px 0px 15px #E0E0E0; margin-left: 140px;">
+					<i class="fa-solid fa-location-dot p-2 text-info" style="border: 2px dotted lightblue; border-radius: 150px; margin: 10px 0px 10px 230px;"></i>
+				<h5 class="text-secondary" style="text-align: center;"><b>Our Address</b></h5>
+				<p class="text-secondary" style="text-align: center;">A108,Trichy,TY-620002</p>
+			    </div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-4" style="background-color: white; margin-left: 140px; box-shadow: 0px 0px 15px #E0E0E0;">
+					<i class="fa-regular fa-envelope p-2 text-info" style="border: 2px dotted lightblue; border-radius: 50px; margin: 10px 0px 10px 85px;"></i>
+					<h5 class="text-secondary" style="text-align: center;"><b>Email Us</b></h5>
+					<p class="text-secondary" style="text-align: center;">info@example.com</p>
+					<p class="text-secondary" style="text-align: center;">contact@example.com</p>
+				</div>
+				<br>
+				<div class="col-4" style="background-color: white; margin-left: 50px; box-shadow: 0px 0px 15px #E0E0E0;">
+					<i class="fa-solid fa-phone-volume p-2 text-info" style="border: 2px dotted lightblue; border-radius: 50px; margin: 10px 0px 10px 85px;"></i>
+					<h5 class="text-secondary" style="text-align: center;"><b>Call Us</b></h5>
+					<p class="text-secondary" style="text-align: center;">9360163609</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-5" style="background-color: white; box-shadow: 0px 0px 25px #E0E0E0;"><br>
+			<div class="row">
+				<div class="col-6">
+					<form>
+						<input type="text" class="form-control mr-5" name="" placeholder="Your Name">
+					</form>
+				</div>
+				<div class="col-6">
+					<form>
+						<input type="text" class="form-control mr-5" name="" placeholder="Your Email">
+					</form>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-6">
+				<form>
+					<input type="text" class="form-control" name="" placeholder="Subject">
+				</form>
+			</div>
+			</div>
+			<br>
+			<div class="row ml-1">
+				<textarea class="form-control mr-4" rows="8px" placeholder="Message"></textarea>
+			</div>
+			<br>
+			<button class="btn btn-info pl-4 pr-4" style="margin-left: 200px;">Send Message</button>
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="row text-secondary" style="background-color: #F8F8F8; padding: 50px 100px;"><br>
+	<div class="col-3">
+		<h3 class="text-dark">Medicio</h3>
+		<p>A108,TY-620002,
+		Trichy,Tamilnadu</p>
+		<p><b>Phone:</b> 9360163609</p>
+		<p><b>Email:</b> info@example.com</p>
+		<i class="fa-brands fa-twitter text-light bg-info border-info p-2 ml-1" style="border: solid; border-radius: 4px;"></i>
+		<i class="fa-brands fa-facebook-f text-light bg-info border-info p-2 ml-1" style="border: solid; border-radius: 4px;"></i>
+		<i class="fa-brands fa-instagram text-light bg-info border-info p-2 ml-1" style="border: solid; border-radius: 4px;"></i>
+		<i class="fa-brands fa-skype text-light bg-info border-info p-2 ml-1" style="border: solid; border-radius: 4px;"></i>
+		<i class="fa-brands fa-linkedin-in text-light bg-info border-info p-2 ml-1" style="border: solid; border-radius: 4px;"></i>
+	</div>
+	<div class="col-3">
+		<h5 class="text-dark">Useful Links</h5>
+		<a href="#caro" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Home</a><br>
+		<a href="#abt" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; About us</a><br>
+		<a href="#ser" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Services</a><br>
+		<a href="#" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Terms of service</a><br>
+		<a href="#" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Privacy policy</a><br>
+	</div>
+	<div class="col-3">
+		<h5 class="text-dark">Our Services</h5>
+		<a href="#" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Web Design</a><br>
+		<a href="#" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Web Development</a><br>
+		<a href="#" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Product Management</a><br>
+		<a href="#" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Marketing</a><br>
+		<a href="#" class="text-dark"><i class="fa-solid fa-chevron-right text-info"></i>&nbsp; Graphic Design</a><br>
+	</div>
+	<div class="col-3">
+		<h5 class="text-dark">Our Newsletter</h5>
+		<p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+		<br>
+		<form class="form-inline">
+			<input type="text" class="form-control" name=""><button class="btn
+			btn-info pl-3 pr-3" style="margin-left:-60px;">Subscribe</button>
+		</form>
+	</div>
+</div>
+<div class="p-3" style="background-color: 	#E8E8E8;">
+	<p style="text-align: center;"><i class="fa-regular fa-copyright"></i>&nbsp;Copyright <b>Medicio</b>. All Rigts Reserved</p>
+	<p style="text-align: center;">Designed by <span class="text-info">BootstrapMade</span><a href="#"><i class="fa-solid fa-arrow-up text-light bg-info border-info p-2" style="border: solid; border-radius: 4px; align-items: end;"></i></a></p>
+</div>
+</body>
+</html>

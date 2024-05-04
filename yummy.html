@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YUMMY</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+    	.carousel-inner img{
+    		width: 100%;
+    		height: 500px;
+    	}
+    	.carousel-indicators li{
+    		width: 12px;
+    		height: 12px;
+    		border-radius: 100%;
+    	}
+    	#bg{
+    		background-image: url(Asserts/bg.webp);
+    		background-repeat: no-repeat;
+    		background-size: 100%;
+    	}
+    </style>
+</head>
+<body>
+<div class="navbar navbar-expand-sm navbar-dark " style="color: white;">
+	<p class="navbar-brand text-dark" style="margin-left: 130px;"><b>Yummy<span class="text-danger">.</span></b></p>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#atag"><span class="navbar-toggler-icon"></span></button>
+	<div class="collapse navbar-collapse ml-3" id="atag">
+		<ul class="navbar-nav m-auto">
+			<li class="nav-item ml-3">
+				<a class="nav-link active text-secondary font-weight-bold" style="font-size: 14px;" href="#">Home</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link  text-secondary font-weight-bold" style="font-size: 14px;" href="#abt">About</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link  text-secondary font-weight-bold" style="font-size: 14px;" href="#menu">Menu</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link  text-secondary font-weight-bold" style="font-size: 14px;" href="#event">Events</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link  text-secondary font-weight-bold" style="font-size: 14px;" href="#chefs">Chefs</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link  text-secondary font-weight-bold" style="font-size: 14px;" href="#gall">Gallery</a>
+			</li>
+			<li class="nav-item ml-3 dropdown">
+				<a class="nav-link dropdown-toggle text-secondary font-weight-bold" style="font-size: 14px;" href="#" id="drop" role="button" data-toggle="dropdown">Drop Down</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">action</a>
+					<a class="dropdown-item" href="#">action 1</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">action 2</a>
+				</div>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link text-secondary font-weight-bold" style="font-size: 14px;" href="#con">Contact</a>
+			</li>
+			<li class="nav-item">
+				<button class="btn btn-danger pl-3 pr-3" style="color: white; border-radius: 50px; font-size: 13px; margin-left: 200px;">Book a Table</button>
+			</li>
+		</ul>
+	</div>
+</div>
+<div style="background-color: #E5E4E2; display: flex;">
+	<div style="margin: 150px 0px 150px 150px;">
+		<p style="font-size: 30px; font-family: cursive;">ENJOY YOUR HEALTHY</p>
+		<p style="font-size: 30px; font-family: cursive;">DELICIOUS FOOD</p>
+		<p class="small">Sed autem laudantium dolores. Voluptaterm itaque ea consequatur</p>
+		<p class="small"> eveviet. Enum quas beatae cumque enum quaerat.</p>
+		<div style="display: flex">
+		    <div>
+		        <button class="btn btn-danger pl-4 pr-4" style="color: white; border-radius: 50px; box-shadow: 0px 0px 8px red;">Book a Table</button>
+		    </div>
+		    <div>
+		        <h6 class="small font-weight-bold"><i class="fa-regular fa-circle-play lead text-danger"></i>     Watch Video</h6>
+		    </div>
+		</div>
+	</div>
+	<div style="margin-left: 230px; margin-top: 85px;">
+		<img src="Asserts/f3.jpg" height="350" width="350">
+	</div>
+</div>
+<br>
+<br><br>
+<div id="abt" style="background-color: #E5E4E2;">
+	<br><br>
+	<p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">ABOUT US</p>
+	<p class="text-secondary font-weight-light" style="font-size: 20px; font-family: cursive; text-align: center;">LEARN MORE <span class="text-danger">ABOUT US</span></p>
+	<br>
+    <br>
+    <div class="row" style="margin-left: 150px;">
+    	<div class="col-5">
+    		<img src="Asserts/res.webp" style="height: 660px; width: 640px;">
+    	</div>
+    	<div class="col-4" style="margin-left: 170px;">
+    		<p class="small"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	        tempor incididunt ut labore et dolore magna aliqua.</i></p>
+	        <br>
+	        <p class="unstyled small"><i class="fa-solid fa-check-double text-danger"></i></i>  Ullamco laboris nisi ut aliquip ex ea commodo
+	        consequat.</p>
+	        <p class="unstyled small"><i class="fa-solid fa-check-double text-danger"></i></i>  Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+	        <p class="unstyled small"><i class="fa-solid fa-check-double text-danger"></i></i>  Ullamco laboris nisi ut aliquip ex ea commodo
+	        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	        cillum dolore eu fugiat nulla pariatur.</p>
+	        <br>
+	        <p class="unstyled small">Ullamco laboris nisi ut aliquip ex ea commodo
+	        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        <br>
+	        <iframe width="350" height="300" src="https://www.youtube.com/embed/I6D8RM7jjng?si=UDKP9ywiWwjwK51_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    	</div>
+    </div>
+</div>
+<br><br>
+<div style="background-color: #E5E4E2;">
+	<br><br>
+	<div class="row" style="margin-left: 280px;">
+		<div class="col-2 mr-3 pl-3 pr-5" style="background-color: white;"><br>
+			<h6>Why Choose Yummy?</h6>
+			<p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<button class="btn pl-3 pr-3" style="color: white; background-color: lightgray; border-radius: 50px; font-size: 13px; margin-left: 17px;">Learn More</button>
+			<br><br>
+		</div>
+		<div class="col-2 mr-3 pl-3 pr-5" style="background-color: white;"><br>
+			<h6>Corporis voluptates officia eiusmod</h6>
+			<p class="small">Conseequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+		</div>
+		<div class="col-2 mr-3 pl-3 pr-5" style="background-color: white;"><br>
+			<i class="fa-regular fa-gem"></i>
+			<h6>Ullamco laboris ladore pan</h6>
+			<p class="small">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+		</div>
+		<div class="col-2 mr-3 pl-3 pr-5" style="background-color: white;"><br>
+			<h6>Labore consequatur incidid dolore</h6>
+			<p class="small">Aut suscipit aut cu nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+		</div>
+	</div>
+	<br><br>
+</div>
+<br><br>
+<div id="bg">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="row" style="margin-left: 130px;">
+		<div class="col-3">
+			<h1 style="color: white;"><b>232</b></h1>
+			<p class="small" style="color:whitesmoke;"><b>Clients</b></p>
+		</div>
+		<div class="col-3">
+			<h1 style="color: white;"><b>521</b></h1>
+			<p class="small" style="color:whitesmoke;"><b>Projects</b></p>
+
+		</div>
+		<div class="col-3">
+			<h1 style="color: white;"><b>1453</b></h1>
+			<p class="small" style="color:whitesmoke;"><b>Hours of Support</b></p>
+
+		</div>
+		<div class="col-3">
+			<h1 style="color: white;"><b>32</b></h1>
+			<p class="small" style="color:whitesmoke;"><b>Workers</b></p>
+
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</div>
+<div id="menu">
+	<br><br>
+	<p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">OUR MENU</p>
+	<p class="text-secondary font-weight-light" style="font-size: 20px; font-family: cursive; text-align: center;">CHECK OUR <span class="text-danger">YUMMY MENU</span></p>
+	<br>
+	    <ul class="nav justify-content-center">
+			<li class="nav-item ml-3">
+				<a class="nav-link active text-danger font-weight-bold" style="font-size: 14px; text-decoration: underline;" href="#starters">Starters</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link text-secondary font-weight-bold" style="font-size: 14px; text-decoration: underline;" href="#breakfast">Breakfast</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link text-secondary font-weight-bold" style="font-size: 14px; text-decoration: underline;" href="#lunch">Lunch</a>
+			</li>
+			<li class="nav-item ml-3">
+				<a class="nav-link text-secondary font-weight-bold" style="font-size: 14px; text-decoration: underline;" href="#dinner">Dinner</a>
+			</li>
+		</ul>
+    <br>
+    <div id="starters">
+    	<div>
+	        <br><br>
+	        <p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">MENU</p>
+	        <h1 class="text-danger" style="font-size: 30px; font-family: monospace; font-weight: 900; text-align: center;">Starters</h1>
+	        <br>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/s3.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Magnam Tiste</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$5.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/s4.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Aut Luia</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$14.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/s5.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Est Eligendi</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$8.95</h4>
+	        	</div>
+	        </div>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/s1.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/s2.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/s6.webp" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Laboriosam Direva</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$9.95</h4>
+	        	</div>
+	        </div>
+        </div>
+    </div>
+    <div id="breakfast">
+    	<div>
+	        <br><br>
+	        <p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">MENU</p>
+	        <h1 class="text-danger" style="font-size: 30px; font-family: monospace; font-weight: 900; text-align: center;">Breakfast</h1>
+	        <br>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/b1.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Magnam Tiste</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$5.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/b2.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Aut Luia</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$14.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/b3.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Est Eligendi</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$8.95</h4>
+	        	</div>
+	        </div>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/b4.png" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/b5.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/b6.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Laboriosam Direva</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$9.95</h4>
+	        	</div>
+	        </div>
+        </div>
+    </div>
+    <div id="lunch">
+    	<div>
+	        <br><br>
+	        <p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">MENU</p>
+	        <h1 class="text-danger" style="font-size: 30px; font-family: monospace; font-weight: 900; text-align: center;">Lunch</h1>
+	        <br>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/l1.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Magnam Tiste</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$5.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/l2.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Aut Luia</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$14.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/l3.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Est Eligendi</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$8.95</h4>
+	        	</div>
+	        </div>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/l4.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/l5.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/l6.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Laboriosam Direva</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$9.95</h4>
+	        	</div>
+	        </div>
+        </div>
+    </div>
+    <div id="dinner">
+    	<div>
+	        <br><br>
+	        <p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">MENU</p>
+	        <h1 class="text-danger" style="font-size: 30px; font-family: monospace; font-weight: 900; text-align: center;">Dinner</h1>
+	        <br>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/dd1.jpeg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Magnam Tiste</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$5.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/dd2.jpeg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Aut Luia</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$14.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/dd3.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Est Eligendi</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$8.95</h4>
+	        	</div>
+	        </div>
+	        <div class="row" style="margin: 10px 100px 10px 100px;">
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/dd4.webp" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/dd5.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Eos Luibusdam</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$12.95</h4>
+	        	</div>
+	        	<div class="col-4 text-center">
+	        		<img src="Asserts/dd6.jpg" style="height: 200px; width: 200px; border-radius: 100%;">
+	        		<h5 class="text-secondary">Laboriosam Direva</h5>
+	        		<p class="small text-secondary">Lorem, deren, trataro, filede, nerada</p>
+	        		<h4 class="text-danger">$9.95</h4>
+	        	</div>
+	        </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<div id="event" style="background-color: #E5E4E2;">
+	<br><br>
+	<p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">TESTIMONIALS</p>
+	<p class="text-secondary font-weight-light" style="font-size: 20px; font-family: cursive; text-align: center;">WHAT ARE THEY <span class="text-danger">SAYING ABOUT US</span> CHEFS</p>
+	<br>
+    <br>
+	<div id="yum" class="carousel slide" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li data-target="#yum" data-slide-to="0" class="active bg-danger"></li>
+		<li data-target="#yum" data-slide-to="1" class="bg-light"></li>
+		<li data-target="#yum" data-slide-to="2" class="bg-light"></li>
+		<li data-target="#yum" data-slide-to="3" class="bg-light"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<div class="col-4" style="background-color: #E5E4E2; padding: 20px; border-radius: 6px; display: flex; margin: auto;">
+				<div>
+			    <p class="small"><i><i class="fa-solid fa-quote-left text-danger"></i>Ut enim ad minim veniam,
+	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<i class="fa-solid fa-quote-right text-danger"></i>
+	            <h5><b>John Larson</b></h5>
+	            <p class="small">Entrepreneur</p>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            </div>
+	            <div>
+	            <img src="Asserts/pp1.jpg" style="height: 150px; width: 150px; border-radius: 100%; border: 3px solid white;">
+	            </div><br><br>
+	        </div><br><br>
+		</div>	
+		<div class="carousel-item">
+			<div class="col-4" style="background-color: #E5E4E2; padding: 20px; border-radius: 6px; display: flex; margin: auto;">
+				<div>
+			    <p class="small"><i><i class="fa-solid fa-quote-left text-danger"></i>Ut enim ad minim veniam,
+	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<i class="fa-solid fa-quote-right text-danger"></i>
+	            <h5><b>Walter White</b></h5>
+	            <p class="small">Managing Superior</p>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            </div>
+	            <div>
+                <img src="Asserts/pp4.jpg" style="height: 150px; width: 150px; border-radius: 100%; border: 3px solid white; ">
+                </div><br><br>
+	        </div><br><br>
+		</div>
+		<div class="carousel-item">
+			<div class="col-4" style="background-color: #E5E4E2; padding: 20px; border-radius: 6px; display: flex; margin: auto;">
+				<div>
+			    <p class="small"><i><i class="fa-solid fa-quote-left text-danger"></i>Ut enim ad minim veniam,
+	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<i class="fa-solid fa-quote-right text-danger"></i>
+	            <h5><b>David Miller</b></h5>
+	            <p class="small">Cook</p>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            </div>
+	            <div>
+	            <img src="Asserts/pp3.jpg" style="height: 150px; width: 150px; border-radius: 100%; border: 3px solid white;">
+	            </div><br><br>
+	        </div><br><br>
+		</div>
+		<div class="carousel-item">
+			<div class="col-4" style="background-color: #E5E4E2; padding: 20px; border-radius: 6px; display: flex; margin: auto;">
+				<div>
+			    <p class="small"><i><i class="fa-solid fa-quote-left text-danger"></i>Ut enim ad minim veniam,
+	            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.<i class="fa-solid fa-quote-right text-danger"></i>
+	            <h5><b>Andria Paul</b></h5>
+	            <p class="small">Cook</p>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            <i class="fa-solid fa-star text-warning"></i>
+	            </div>
+	            <div>
+	            <img src="Asserts/pp2.jpg" style="height: 150px; width: 150px; border-radius: 100%; border: 3px solid white;">
+	            </div><br><br>
+	        </div><br><br>
+		</div>
+	</div>
+		<a class="carousel-control-prev" href="#yum" data-slide="prev">
+        <span class="carousel-control-prev-icon p-3" style="border-radius: 100%;"></span>
+    </a>
+    <a class="carousel-control-next" href="#yum" data-slide="next">
+        <span class="carousel-control-next-icon p-3" style="border-radius: 100%;"></span>
+    </a>
+	</div>
+	
+</div>
+<br><br>
+</div>
+<div id="chefs" style="background-color: #E5E4E2;">
+	<br><br>
+	<p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">CHEFS</p>
+	<p class="text-secondary font-weight-light" style="font-size: 20px; font-family: cursive; text-align: center;">OUR <span class="text-danger">PROFESSIONAL</span>CHEFS </p>
+	<br>
+	<div style="margin: 10px 200px 10px 200px;">
+	<div class="row">
+		<div class="col-4">
+			<div class="card">
+				<img src="Asserts/c4.jpg">
+			</div>
+			<div class="card-body text-center" style="background-color: white;">
+				<h5>Walter White</h5>
+				<p class="text-secondary small">Master Chef</p>
+				<p>Velit out quio fugit et et. Doloru ea volupate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minia enim crporis et voluptate.</p>
+				<br>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card">
+				<img src="Asserts/c3.jpg">
+			</div>
+			<div class="card-body text-center" style="background-color: white;">
+				<h5>Sarah Johnson</h5>
+				<p class="text-secondary small">Patissier</p>
+				<p>Quo esse repellendus quio id. Est eum et accusantium pariotur fugit nihil minima suscripit corporis . Voluptote sed quas reiciendis animi neque sapiente.</p>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card">
+				<img src="Asserts/c5.webp">
+			</div>
+			<div class="card-body text-center" style="background-color: white;">
+				<h5>William Anderson</h5>
+				<p class="text-secondary small">Cook</p>
+				<p>Vero omnis eni consequotur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim out architecto porro aspernatur molestiae modi.</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	</div>
+	
+</div>
+<br><br>
+<div>
+	<p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">BOOK A TABLE</p>
+	<p class="text-secondary font-weight-light" style="font-size: 20px; font-family: cursive; text-align: center;">BOOK <span class="text-danger">YOUR STAY</span> WITH US</p>
+	<br>
+	<div style="background-color: #E5E4E2; margin: 0px 200px;">
+		<div class="row">
+			<div class="col-4">
+				<img src="Asserts/f1.webp" height="400" width="330">
+			</div>
+			<div class="col-8">
+				<br>
+				<br>
+			    <div class="row" style="margin: 20px;">
+				    <div class="col-4">
+					    <form class="small">
+						    <input type="text" class="form-control" name="" placeholder="Your Name">
+					    </form>
+					</div>
+					<div class="col-4">
+					    <form class="small">
+						    <input type="Email" class="form-control" name="" placeholder="Your Email">
+					    </form>
+					</div>
+					<div class="col-4">
+					    <form class="small">
+						    <input type="number" class="form-control" name="" placeholder="Your Phone">
+					    </form>
+				    </div>
+			    </div>
+			    <div class="row" style="margin: 20px;">
+				    <div class="col-4">
+					    <form class="small">
+						    <input type="text" class="form-control" name="" placeholder="Date">
+					    </form>
+					</div>
+					<div class="col-4">
+					    <form class="small">
+						    <input type="text" class="form-control" name="" placeholder="Time">
+					    </form>
+					</div>
+					<div class="col-4">
+					    <form class="small">
+					    	<input type="text" class="form-control" name="" placeholder="# of people">
+				    	</form>
+				    </div>
+			    </div>
+			    <div class="row" style="margin: 20px;">
+			    	<div class="col-12">
+			    		<textarea class="form-control" placeholder="Message" rows="4px"></textarea>
+			    	</div>
+			    </div>
+			    <br>
+			    <button class="btn btn-danger pl-4 pr-4" style="margin-left: 250px; color: white; border-radius: 50px;">Book a Table</button>
+			    <br>
+			</div>
+		</div>
+	</div>
+</div>
+<br><br>
+<div id="gall" style="background-color: #E5E4E2;">
+	<br><br>
+	<p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">GALLERY</p>
+	<p class="text-secondary font-weight-light" style="font-size: 20px; font-family: cursive; text-align: center;">CHECK <span class="text-danger">OUR GALLERY</span></p>
+	<br>
+    <div style="margin: 10px 100px 0px 100px;">
+		<ul class="pagination">
+			<li class="page-item"><img src="Asserts/g1.avif" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/g2.avif" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/gg3.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/gg4.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/gg5.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/gg6.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/gg7.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+			<li class="page-item"><img src="Asserts/gg8.jpg" height="200" width="200"></li>&nbsp;&nbsp;&nbsp;
+		</ul>
+    </div><br>
+    <div style="text-align: center;">
+	<i class="fa-solid fa-circle text-light" style="font-size: 10px;"></i>	
+	<i class="fa-solid fa-circle text-light" style="font-size: 10px;"></i>
+	<i class="fa-solid fa-circle text-light" style="font-size: 10px;"></i>
+	<i class="fa-solid fa-circle text-light" style="font-size: 10px;"></i>
+	<i class="fa-solid fa-circle text-danger" style="font-size: 10px;"></i>
+	<i class="fa-solid fa-circle text-light" style="font-size: 10px;"></i>
+	<i class="fa-solid fa-circle text-light" style="font-size: 10px;"></i>
+	<i class="fa-solid fa-circle text-light" style="font-size: 10px;"></i>
+	</div><br>
+</div>
+
+<br><br>
+<div id="con">
+	<p style="font-size: 11px; text-align: center; letter-spacing: 1px;" class="text-secondary">CONTACT</p>
+	<p class="text-secondary lead" style="font-size: 20px; font-family: cursive; text-align: center;">NEED HELP? <span class="text-danger">CONTACT US</span></p>
+	<br>
+	<div style="background-color: #E5E4E2; margin: 0px 200px;">
+		<div class="row">
+			<div class="col-8">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+		    </div>
+		</div>
+	</div>
+	<br>
+	<div class="row" style="margin: 20px 35px 20px 200px;">
+		<div class="col-5" style="display: flex; background-color: whitesmoke; margin-right: 10px; padding: 20px 20px;"><br>
+			<div>
+				<i class="fa-solid fa-map bg-danger p-3" style="border-radius: 100%;  color: white;"></i>
+			</div>
+			<div>
+			    <h6 class="text-secondary">Our Address</h6>
+			    <p style="font-size: 12px;">A108 Adam Street&nbsp;
+			    New York,NY 535022</p>
+			</div>
+		</div>
+      
+		<div class="col-5" style="display: flex; background-color: whitesmoke; margin-left: 10px; padding: 20px 20px;"><br>
+			<div>
+				<i class="fa-regular fa-envelope bg-danger p-3" style=" color: white; border-radius: 100%;"></i>
+			</div>
+			<div>
+				<h6 class="text-secondary">Email Us</h6>
+				<p style="font-size: 12px;">contact@example.com</p>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin: 20px 35px 20px 200px;">
+		<div class="col-5" style="display: flex; background-color: whitesmoke; margin-right: 10px; padding: 20px 20px;"><br>
+			<div>
+				<i class="fa-solid fa-phone-volume bg-danger p-3" style=" color: white; border-radius: 100%;"></i>
+			</div>
+			<div>
+				<h6 class="text-secondary">Call Us</h6>
+				<p style="font-size: 12px;">+1 5589 55488 55</p>
+			</div>
+		</div>
+		<div class="col-5" style="display: flex; background-color: whitesmoke; margin-left: 10px; padding: 20px 20px;"><br>
+			<div>
+				<i class="fa-solid fa-share-nodes bg-danger p-3" style=" color: white; border-radius: 100%;"></i>
+			</div>
+			<div>
+				<h6 class="text-secondary">Opening Hours</h6>
+				<p style="font-size: 12px;"><b>Mon-Sat:</b>11AM-23PM;<b>Sunday:</b>Closed</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	<div class="col-8" style="background-color: white; box-shadow: 0px 0px 25px #E0E0E0; margin: auto;"><br>
+			<div class="row">
+				<div class="col-6">
+					<form>
+						<input type="text" class="form-control mr-5" name="" placeholder="Your Name">
+					</form>
+				</div>
+				<div class="col-6">
+					<form>
+						<input type="Email" class="form-control mr-5" name="" placeholder="Your Email">
+					</form>
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-6">
+				<form>
+					<input type="text" class="form-control" name="" placeholder="Subject">
+				</form>
+			</div>
+			</div>
+			<br>
+			<div class="row ml-1">
+				<textarea class="form-control mr-4" rows="8x" placeholder="Message"></textarea>
+			</div>
+			<br>
+			<button class="btn btn-danger pl-4 pr-4" style="margin-left: 350px; color: white; border-radius: 50px;">Send Message</button>
+			<br>
+			<br>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<div class="bg-dark">
+	<br>
+	<div class="row" style="margin: 10px 120px 10px 160px;">
+		<div class="col-3" style="color: white; font-size: 12px;">
+			<i class="fa-solid fa-location-dot p-2" style="color: lightgray;"></i><h6>Address</h6>
+			<p>A108 Adam Street&nbsp;
+			New York,NY 535022-US</p>
+		</div>
+		<div class="col-3" style="color: white; font-size: 12px;">
+			<i class="fa-solid fa-phone-volume p-2" style="color: lightgray;"></i><h6>Reservations</h6>
+			<p><b>Phone:</b> +1 5589 55488 55&nbsp;
+				<b>Email:</b> info@example.com</p>
+		</div>
+		<div class="col-3" style="color: white; font-size: 12px;">
+			<i class="fa-regular fa-clock p-2" style="color: lightgray;"></i><h6>Opening Hours</h6>
+			<p>Mon-Sat: 11AM-<span class="text-secondary">23PM</span>&nbsp;
+			Sunday: Closed</p>
+		</div>
+		<div class="col-3" style="color: white; font-size: 12px;"><br>
+			<h6>Follow Us</h6>
+			<i class="fa-brands fa-twitter bg-dark p-2 ml-1" style="border: 1px solid lightgray; border-radius: 100%; color: lightgray;"></i>
+		<i class="fa-brands fa-facebook-f bg-dark p-2 ml-1" style="border: 1px solid lightgray; border-radius: 100%; color: lightgray;"></i>
+		<i class="fa-brands fa-instagram bg-dark p-2 ml-1" style="border: 1px solid lightgray; border-radius: 100%; color: lightgray;"></i>
+		<i class="fa-brands fa-linkedin-in bg-dark p-2 ml-1" style="border: 1px solid lightgray; border-radius: 100%; color: lightgray;"></i>
+		</div>
+	</div>
+	<hr style="background-color: lightgray; margin: 10px 100px 10px 100px;"><br>
+	<div style="text-align: center; color: lightgray;">
+		<p style="font-size: 12px;">Copyright <b>Yummy.</b> All Rights Reserved</p>
+		<p style="font-size: 10px;">Designed by <b>BootstrapMade</b></p><br>
+	</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+<i class="fa-solid fa-user-doctor"></i>
+<i class="fa-regular fa-hospital"></i>
+<i class="fa-solid fa-flask"></i>
+<i class="fa-solid fa-award"></i>
+<i class="fa-regular fa-images"></i>
+<i class="fa-solid fa-hospital-user"></i>
+<i class="fa-solid fa-wheelchair"></i>
+<i class="fa-solid fa-square-plus"></i>
+<i class="fa-solid fa-quote-left"></i>
+<i class="fa-solid fa-quote-right"></i>
+<i class="fa-solid fa-circle"></i>
+<i class="fa-regular fa-circle"></i>
+<i class="fa-solid fa-horizontal-rule"></i>
+<i class="fa-solid fa-shield"></i>
+<i class="fa-solid fa-cube"></i>
+<i class="fa-solid fa-dice-d6"></i>
+<i class="fa-solid fa-sheet-plastic"></i>
+<i class="fa-solid fa-chevron-down"></i>
+<i class="fa-solid fa-angles-right"></i>
+
+
+
+
+
+
